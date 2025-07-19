@@ -1,77 +1,94 @@
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body {
-  background-color: #f9fafe;
-  color: #111;
+    background-color: #f7f9fc;
+    color: #111;
+    line-height: 1.6;
 }
 
-.banner {
-  background: linear-gradient(90deg, #000000, #1e3a8a, #e11d48);
-  color: white;
-  padding: 2rem;
-  text-align: center;
+header {
+    background: linear-gradient(to right, #000000, #11146c, #ff0048);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
-.banner-content h1 {
-  font-size: 2.5rem;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.banner nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 main {
-  padding: 2rem;
-  display: grid;
-  gap: 2rem;
-  max-width: 800px;
-  margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+section {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.card img {
-  width: 200px;
-  display: block;
-  margin: 1rem auto;
+.qr-pago {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.qr-pago img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 0.5rem;
 }
 
 textarea {
-  width: 100%;
-  height: 100px;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+    width: 100%;
+    height: 100px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 button {
-  background-color: #1e3a8a;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #11146c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff0048;
 }
 
 footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-  background-color: #111;
-  color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    background-color: #111;
+    color: white;
 }
